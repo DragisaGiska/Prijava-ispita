@@ -1,0 +1,21 @@
+﻿<Window x:Class="SistemZaPrijavuIspita_27_6_2017.SvePrijavePredmeta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemZaPrijavuIspita_27_6_2017"
+        mc:Ignorable="d"
+        Title="Sistem za prijavu ispita - SZPI 2017" Height="404.549" Width="459.023" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="325*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,1,0,0" Grid.Row="1">
+            <StackPanel x:Name="stPanelStudenti" />
+        </ScrollViewer>
+        <Label x:Name="tbNazivPredmeta" Content="Naziv predmeta" HorizontalAlignment="Center" Height="44" Margin="91,5,91,0" VerticalAlignment="Top" Width="269" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Segoe UI Light" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>

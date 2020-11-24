@@ -1,0 +1,25 @@
+﻿<Window x:Class="SistemZaPrijavuIspita_27_6_2017.WindowPrijava"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemZaPrijavuIspita_27_6_2017"
+        mc:Ignorable="d"
+        Title="Sistem za prijavu ispita - SZPI 2017" Height="271.805" Width="378.947" WindowStartupLocation="CenterScreen" MinWidth="378.947" MinHeight="271.805">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Ime:" HorizontalAlignment="Right" Height="34" Margin="0,38,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe UI Light" FontSize="18" HorizontalContentAlignment="Right"/>
+        <Label Content="Prezime:" HorizontalAlignment="Right" Height="34" Margin="0,81,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe UI Light" FontSize="18" HorizontalContentAlignment="Right"/>
+        <Label Content="Br. ind.:" HorizontalAlignment="Right" Height="34" Margin="0,125,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe UI Light" FontSize="18" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="tbIme" Grid.Column="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="33" Margin="2,42,3,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="tbPrezime" Grid.Column="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="33" Margin="2,84,3,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="tbBrIndeksa" Grid.Column="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="33" Margin="2,128,3,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Button x:Name="btnPrijaviIspit" Content="Prijavi ispit" Grid.Column="2" Margin="27,185,44,0" FontSize="14" IsDefault="True" Height="28" VerticalAlignment="Top" Click="btnPrijaviIspit_Click"/>
+
+    </Grid>
+</Window>
